@@ -75,7 +75,7 @@ token = jwt.generate_jwt(payload, jwk.JWK.from_json(private_key), 'RS256', datet
 
 app = Flask(__name__)
 
-@app.route('/index.html')
+@app.route('/jwt.html')
 def hello():
     return token
 
